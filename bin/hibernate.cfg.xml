@@ -19,7 +19,7 @@
     	<property name="show_sql">true</property>
     	<!-- 格式化SQL语句 -->
     	<property name="format_sql">true</property>
-    	<!-- 数据库生成策略 -->
+    	<!-- 数据库结构生成策略 -->
     	<property name="hbm2ddl.auto">create</property>
     	
     	<!-- 加载hbm配置文件 -->
