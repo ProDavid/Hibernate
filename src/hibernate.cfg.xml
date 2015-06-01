@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<!-- 数据库用户名 -->
+    	<property name="connection.username">root</property>
+    	<!-- 数据库密码 -->
+    	<property name="connection.password">123</property>
+    	<!-- JDBC驱动 -->
+    	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    	<!-- 数据库连接地址 -->
+    	<property name="connection.url">jdbc:mysql:///hibernate?userUnicode=true&amp;characterEncoding=UTF-8</property>
+    	<!-- 设置数据库方言 -->
+    	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    	
+    	<!-- 显示SQL语句 -->
+    	<property name="show_sql">true</property>
+    	<!-- 格式化SQL语句 -->
+    	<property name="format_sql">true</property>
+    	<!-- 数据库生成策略 -->
+    	<property name="hbm2ddl.auto">create</property>
+    	
+    	<!-- 加载hbm配置文件 -->
+    	<mapping resource="com/david/hibernate/pojo/Student.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
